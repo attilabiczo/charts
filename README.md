@@ -1,6 +1,10 @@
 # charts
 
-Available npm scripts
+Prerequisites
+* in root folder *npm install*
+* in demo folder *npm install*
+
+Available npm scripts (*npm run build|dev|demo*)
 * build - *just creates the bundle files*
-* dev - *creates the bundle files and opens integrator app using it with with file watchers*
-* demo - *just opens integrator app using bundle files*
+* dev - *creates the bundle files and opens integrator app using file watchers*
+* demo - *creates the bundle files and just opens integrator app*

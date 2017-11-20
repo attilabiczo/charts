@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack --watch & npm run start --prefix ./demo",
-    "demo": "npm run start --prefix ./demo"
+    "demo": "webpack & npm run start --prefix ./demo"
   },
   "devDependencies": {
     "webpack": "3.8.1",
