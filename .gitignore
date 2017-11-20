@@ -1,0 +1,9 @@
+node_modules
+dist
+.idea
+npm-debug.log
+demo/etc/
+demo/externals/
+/demo/node_modules/
+/node_modules/
+/npm-debug.log
