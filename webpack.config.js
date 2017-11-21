@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const FILENAME = 'charts';
+const FILENAME = 'cxncharts';
 
 module.exports = {
-    entry: './src/Charts.jsx',
+    entry: './src/charts.tsx',
     output: {
         filename: FILENAME + '.js',
         path: path.resolve(__dirname, 'demo/externals'),
@@ -17,15 +17,15 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
-                    fallback: "style-loader",
-                    use: {loader: "css-loader", options: {minimize: true}}
+                    fallback: 'style-loader',
+                    use: {loader: 'css-loader', options: {minimize: true}}
                 })
             },
             {
-                test: /\.jsx?$/,
+                test: /\.tsx?$/,
                 exclude: /node_modules/,
                 use: [
-                    'babel-loader'
+                    'awesome-typescript-loader'
                 ]
             },
             {
@@ -42,7 +42,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.jsx', '.js' ]
+        extensions: [ '.tsx', '.ts', '.js' ]
     },
     plugins: [
         new ExtractTextPlugin(FILENAME + '.css'),

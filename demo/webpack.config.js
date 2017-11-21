@@ -15,8 +15,10 @@ module.exports = {
         // Add '.js' and '.jsx' as resolvable extensions.
         extensions: [".js", ".jsx"],
         alias: {
-            'charts': path.resolve(__dirname, 'externals/charts'),
-            'charts-style': path.resolve(__dirname, 'externals/charts.css')
+            'cxncharts': path.resolve(__dirname, 'externals/cxncharts'),
+            'cxncharts-style': path.resolve(__dirname, 'externals/cxncharts.css'),
+            react: path.resolve(__dirname, './node_modules/react'),
+            React: path.resolve(__dirname, './node_modules/react')
         }
     },
 

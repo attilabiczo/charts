@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Charts from 'charts';
+import Charts from 'cxncharts';
 
 class Hello extends Component {
 
